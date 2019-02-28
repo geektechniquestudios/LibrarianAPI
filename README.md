@@ -1,6 +1,6 @@
 # LibrarianAPI
 
-I made this with the intent to drastically reduce FileIO verbosity in Java when working with lists of words. This tool has a built in word list with almost 1000 words as well as tools to manipulate word lists. The best uses for these tools are games that use random words, like crosswords, wordsearches, hangman, boggle, pictionary, and it could easily be adapted to Scrabble. All this code assumes words are separated by a new line. If anyone wants a longer word list, I would happy to find one and add it to this project, just drop me a line.
+I made this with the intent to drastically reduce FileIO verbosity in Java when working with lists of words. This tool has a built in word list with almost 1000 words as well as tools to manipulate word lists. The best uses for these tools are games that use random words, like crosswords, wordsearches, hangman, boggle, pictionary, and it could easily be adapted to Scrabble. All this code assumes words are separated by a new line. If anyone wants a longer word list, I would be happy to find one and add it to this project. Just drop me a line.
 
 <br/>
 Oh yeah, and this project contains a prototype for remembering the states of toggles when an application is closed.
@@ -8,7 +8,7 @@ Oh yeah, and this project contains a prototype for remembering the states of tog
 <br/>
 
 ## How to use
-You can copy the packages from this repo and paste them into your project's src folder, or import the jar located at the root of this project. If you import the jar, you will still need to add the package called "memory" to your project under src.
+You can copy the packages from this repo and paste them into your project's src folder, or import the .jar located at the root of this project. If you import the .jar, you will still need to add the package called "memory" to your project under src.
 
 <br/>
 <br/>
@@ -16,20 +16,22 @@ You can copy the packages from this repo and paste them into your project's src 
 
 ## You can get a random String from a .txt based list
 
+By doing what's below, you can get a random word from the most recently assigned list. If you don't choose a list, if will default to the DefaultDictionary.txt file.
+
 ```
 FileTools.getRandomWord();
 ```
 
-if you want to use your own word list, or the "CustomDictionary.txt" included, you can use
+If you want to use your own word list, or the "CustomDictionary.txt" included, you can use
 
 ```
 FileTools.setWordList(String whichWordList);
 ```
 
-where "whichWordList" is the name of your .txt file containing the list. Or you can pass the name of the .txt file located in your package called "memory"
+where "whichWordList" is the name of your .txt file containing the list. Or you can pass the name of the .txt file located in your package called "memory" as a parameter to do it in one step
 
 ```
-FileTools.getRandomWord(whichWordList);
+FileTools.getRandomWord(String whichWordList);
 ```
 where whichWordList is the .txt file from which you would like to get a random word.
 
@@ -63,12 +65,12 @@ The above will return the most recently assigned list that was set. You can set 
 ```
 FileTools.setWordList(String whichWordList);
 ```
-if you do not set a word list at any point prior to using this line, you will assign the DefaultDictionary.txt file included in this repo. However, if you would like to set a word list in the same line that you summon a random word, you can use this overloaded version below
+If you do not set a word list at any point prior to using this line, you will assign the DefaultDictionary.txt file included in this repo. However, if you would like to set a word list in the same line that you summon a random word, you can use this overloaded version belowI
 
 ```
 FileTools.getRandomWordArrList(String whichWordList);
 ```
-Where whichWordList is the .txt file you want to get a random word from.
+where whichWordList is the .txt file you want to get a random word from.
 
 <br/>
 <br/>
@@ -76,7 +78,7 @@ Where whichWordList is the .txt file you want to get a random word from.
 
 ## You can delete words by index
 
-This is really nice, because getting the selected index of a list element from a swing or javafx application is really easy. You can just do 
+This is really nice, because getting the selected index of a list element from a swing or javafx application is easy. You can just do 
 
 ```
 .getSelectionModel().getSelectedIndex();
@@ -105,7 +107,7 @@ where whichWordList is the .txt file you want to refer to.
 
 ## You can maintain toggle states for your menus
 
-I just wanted users' choices to be remembered so they wouldn't have to keep going into options menus, so I made a technique for that, but it only works for one element currently. If anyone is interested in this, I will develop it more. I may do it for my own reasons in the future.
+I wanted users' choices to be remembered so they wouldn't have to keep going into options menus, so I made a technique for that, but it only works for one element currently. If anyone is interested in this, I will develop it more. I may do it for my own reasons in the future.
 <br/>
 You can get the saved state of a toggle by doing 
 
@@ -122,6 +124,6 @@ You can also set the toggle state of that same file by doing
 FileTools.setToggleState(boolean toggleState);
 ```
 
-The only acceptable parameters for the above method are "toggleOn" and "toggleOff"
+The above method will return "toggleOn" or "toggleOff"
 
 I hope this helps someone out there.
