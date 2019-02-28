@@ -1,6 +1,6 @@
 # LibrarianAPI
 
-I made this with the intent to drastically reduce FileIO verbosity in Java when working with lists of words. This tool has a built in word list with almost 1000 words and tools to manipulate word lists. The best uses for these tools are games that use random words, like crosswords, wordsearches, hangman, boggle, pictionary, and it could easily be adapted to Scrabble. All this code assumes words are separated by a new line. If anyone wants a longer word list, I would happy to find one and add it to this project, just drop me a line.
+I made this with the intent to drastically reduce FileIO verbosity in Java when working with lists of words. This tool has a built in word list with almost 1000 words as well as tools to manipulate word lists. The best uses for these tools are games that use random words, like crosswords, wordsearches, hangman, boggle, pictionary, and it could easily be adapted to Scrabble. All this code assumes words are separated by a new line. If anyone wants a longer word list, I would happy to find one and add it to this project, just drop me a line.
 
 <br/>
 Oh yeah, and this project contains a prototype for remembering the states of toggles when an application is closed.
