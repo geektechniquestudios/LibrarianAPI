@@ -66,6 +66,8 @@ if you do not set a word list at any point prior to using this line, you will as
 ```
 FileTools.getRandomWordArrList(String whichWordList);
 ```
+Where whichWordList is the .txt file you want to get a random word from.
+
 <br/>
 <br/>
 <br/>
