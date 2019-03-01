@@ -80,7 +80,7 @@ public class FileTools
 		someFileManagement.openFile();
 		ArrayList<String> listOfCurrentFile = someFileManagement.readFile();
 		listOfCurrentFile.remove(indexOfWordToDelete);
-		someFileManagement.writeCleanToFile(listOfCurrentFile);
+		someFileManagement.writeCleanToFile(listOfCurrentFile, wordListType);
 		someFileManagement.closeFile();
 	}
 	
