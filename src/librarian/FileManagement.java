@@ -1,4 +1,4 @@
-package librarian;
+ package librarian;
 
 //Created by Terry Dorsey
 
@@ -140,17 +140,17 @@ public class FileManagement
 		}
 	}
 	
-	public void writeCleanToFile(ArrayList<String> updatedFile)
+	public void writeCleanToFile(ArrayList<String> updatedFile, String fileToWriteTo)
 	{
 		try
 		{
 			BufferedWriter someWriter = new BufferedWriter
-				(
-					new FileWriter
-						(
-								System.getProperty("user.dir") + "/src/memory/" + "CustomDictionary.txt", false
-						)
-				);
+			(
+				new FileWriter
+					(
+						System.getProperty("user.dir") + "/src/memory/" + fileToWriteTo, false
+					)
+			);
 
 			boolean firstRun = true;
 			for (String x: updatedFile)
