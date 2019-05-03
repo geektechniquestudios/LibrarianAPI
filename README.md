@@ -1,3 +1,11 @@
+# Disclaimer
+
+---
+
+I made this before I properly learned about interfaces, so this is definitely not the best implementation for this function. However, it is functional and bug free. But be warned, **this is digital garbage**
+
+---
+
 # LibrarianAPI
 
 I made this with the intent to drastically reduce FileIO verbosity in Java when working with lists of words. This tool has a built in word list with almost 1000 words as well as tools to manipulate word lists. The best uses for these tools are games that use random words, like crosswords, wordsearches, hangman, boggle, pictionary, and it could easily be adapted to Scrabble. All this code assumes words are separated by a new line. If anyone wants a longer word list, I would be happy to find one and add it to this project. Just drop me a line.
