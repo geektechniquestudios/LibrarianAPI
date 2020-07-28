@@ -2,7 +2,7 @@
 
 ---
 
-I made this before I properly learned about interfaces, so this is definitely not the best implementation for this function. However, it is functional and bug free. So be warned, **this is basically digital garbage**
+This is from my early Java days, so... **this is basically digital garbage** but hey, it might serve you well if you need to work with a list of words.
 
 ---
 
